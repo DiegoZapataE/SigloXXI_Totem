@@ -1,0 +1,62 @@
+﻿<Window x:Class="TotemSigloXXI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:TotemSigloXXI"
+        mc:Ignorable="d"
+        Title="Conoce tu mesa" Height="768" Width="1365" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+
+        <Image Source="fondo.jpg" Stretch="Fill" OpacityMask="Black" Opacity="0.7" d:IsHidden="True"/>
+        <Image Source="fondo_restaurante.jpg" Stretch="Fill" Opacity="0.8"/>
+        <StackPanel Margin="102,10,730,10" HorizontalAlignment="Center" VerticalAlignment="Center" Width="527" Height="719">
+
+            <Image Margin="152,20,152,0" Source="LOGO3.png" Stretch="Fill" Height="220" VerticalAlignment="Center"/>
+
+            <Label Content="RUT CLIENTE" Style="{StaticResource MaterialDesignLabel}" BorderThickness="2" BorderBrush="Black" VerticalAlignment="Center" Height="35" Foreground="Black" VerticalContentAlignment="Center" Margin="129,0,129,10" HorizontalContentAlignment="Center" FontSize="18" Background="White" FontWeight="Bold">
+                <Label.OpacityMask>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.OpacityMask>
+            </Label>
+            <TextBox x:Name="txtRut" Height="39" TextWrapping="Wrap" Style="{StaticResource MaterialDesignTextBox}" 
+                     materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="Black" KeyUp="txtRut_KeyUp" MaxLength="12"
+                         Background="White" Foreground="Black" materialDesign:HintAssist.Hint="Ingrese su rut. Sin puntos ni guión."
+                     VerticalAlignment="Center" RenderTransformOrigin="0.552,-3.812" Margin="33,0,33,15" FontSize="20" VerticalContentAlignment="Center" ToolTip="Ingresa tu rut"/>
+            <DockPanel RenderTransformOrigin="0.38,0.535" VerticalAlignment="Center" Margin="72,0,71,0">
+                <Button Width="182" Height="45" Style="{StaticResource MaterialDesignRaisedButton}"
+                         materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="Black"
+                         Background="White" Foreground="Black" ToolTip="Buscar" x:Name="btnBuscar" Click="btnBuscar_Click" Content="Buscar mesa" Cursor="Hand" Margin="5,15,5,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <Button Width="182" Height="45" Style="{StaticResource MaterialDesignRaisedButton}"
+                         materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="Black"
+                         Background="White" Foreground="Black" ToolTip="Limpiar pantalla" x:Name="btnBorrar" Click="Limpiar_Campos" Content="Borrar" Cursor="Hand" Margin="5,15,5,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </DockPanel>
+            <Button Height="45" Style="{StaticResource MaterialDesignRaisedButton}"
+                    materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="Black"
+                    Background="#FFA0E45B" Foreground="Black" ToolTip="Buscar" x:Name="btnInvitado" Click="btnInvitado_Click" Content="Solicitar mesa como invitado" Cursor="Hand" Margin="137,30,137,0" VerticalAlignment="Center"/>
+            <TextBox x:Name="txtResultado" Style="{StaticResource MaterialDesignTextBox}"
+                     materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="Black"
+                         Background="White" Foreground="Black" materialDesign:HintAssist.Hint="Su resultado aparecerá en este cuadro." 
+                     TextWrapping="Wrap" TextChanged="txtResultado_TextChanged" FontSize="20" FontWeight="Bold" TextAlignment="Center" Height="131" VerticalAlignment="Center" Margin="33,30,33,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        </StackPanel>
+        <StackPanel RenderTransformOrigin="0.38,0.535" Margin="723,79,98,0" HorizontalAlignment="Center" Height="589" VerticalAlignment="Top" Width="538">
+            <Border BorderThickness="2" BorderBrush="Black" Margin="16,0">
+                <Image x:Name="imgQR" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Source="qr_img.png" Stretch="Fill" Margin="1,0" Height="500" Width="500">
+                </Image>
+            </Border>
+            <TextBox x:Name="txtInfo" TextWrapping="Wrap" TextAlignment="Center" Style="{StaticResource MaterialDesignTextBoxBase}"
+                     materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="Black"
+                         Background="White" Foreground="Black" FontSize="18" Height="85" VerticalAlignment="Center" HorizontalAlignment="Center" Width="506" Text="Escanea el código QR o visita la página&#xD;&#xA;http://localhost:8080/SigloXXI_Web/totem.jsp&#xD;&#xA;para conocer tu mesa." TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
+        <StackPanel RenderTransformOrigin="0.38,0.535" Margin="0,0,0,688">
+            <TextBlock x:Name="txtHora" FontSize="30" FontWeight="Bold" Height="50" Background="White" Margin="575,0" Opacity="0.7" TextAlignment="Center"/>
+
+        </StackPanel>
+    </Grid>
+
+</Window>
