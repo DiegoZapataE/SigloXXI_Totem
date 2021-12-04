@@ -45,13 +45,14 @@
 
         </StackPanel>
         <StackPanel RenderTransformOrigin="0.38,0.535" Margin="723,79,98,0" HorizontalAlignment="Center" Height="589" VerticalAlignment="Top" Width="538">
-            <Border BorderThickness="2" BorderBrush="Black" Margin="16,0">
-                <Image x:Name="imgQR" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Source="qr_img.png" Stretch="Fill" Margin="1,0" Height="500" Width="500">
-                </Image>
+            <Border BorderThickness="2" BorderBrush="Black" Margin="16,0" Height="506">
+                <Border.Background>
+                    <ImageBrush ImageSource="qr_img.png"/>
+                </Border.Background>
             </Border>
             <TextBox x:Name="txtInfo" TextWrapping="Wrap" TextAlignment="Center" Style="{StaticResource MaterialDesignTextBoxBase}"
                      materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="Black"
-                         Background="White" Foreground="Black" FontSize="18" Height="85" VerticalAlignment="Center" HorizontalAlignment="Center" Width="506" Text="Escanea el código QR o visita la página&#xD;&#xA;http://localhost:8080/SigloXXI_Web/totem.jsp&#xD;&#xA;para conocer tu mesa." TextChanged="TextBox_TextChanged"/>
+                         Background="White" Foreground="Black" FontSize="18" Height="85" VerticalAlignment="Center" HorizontalAlignment="Center" Width="506" Text="Escanea el código QR o visita la página&#xA;http://localhost:9111/SigloXXI_Web_Reservas/totem.jsp&#xA;para conocer tu mesa." TextChanged="TextBox_TextChanged"/>
         </StackPanel>
         <StackPanel RenderTransformOrigin="0.38,0.535" Margin="0,0,0,688">
             <TextBlock x:Name="txtHora" FontSize="30" FontWeight="Bold" Height="50" Background="White" Margin="575,0" Opacity="0.7" TextAlignment="Center"/>

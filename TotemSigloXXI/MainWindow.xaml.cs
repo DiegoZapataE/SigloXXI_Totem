@@ -48,7 +48,7 @@ namespace TotemSigloXXI
             txtRut.Focus();
 
             reservas.Tick += new EventHandler(ActualizarMesasReservadas);
-            reservas.Interval = new TimeSpan(0, 0, 30);
+            reservas.Interval = new TimeSpan(0, 0, 5);
             reservas.Start();
         }
 
