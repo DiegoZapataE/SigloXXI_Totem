@@ -6,6 +6,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:TotemSigloXXI"
         mc:Ignorable="d"
+        Icon="Icon.ico"
         Title="Conoce tu mesa" Height="768" Width="1365" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
 

@@ -92,3 +92,7 @@ C:\Users\Felipe Fuentes\Desktop\PORTAFOLIO FINAL\TotemSigloXXI\TotemSigloXXI\obj
 C:\Users\Felipe Fuentes\Desktop\PORTAFOLIO FINAL\TotemSigloXXI\TotemSigloXXI\obj\Debug\TotemSigloXXI.csproj.CopyComplete
 C:\Users\Felipe Fuentes\Desktop\PORTAFOLIO FINAL\TotemSigloXXI\TotemSigloXXI\obj\Debug\TotemSigloXXI.exe
 C:\Users\Felipe Fuentes\Desktop\PORTAFOLIO FINAL\TotemSigloXXI\TotemSigloXXI\obj\Debug\TotemSigloXXI.pdb
+C:\Users\Felipe Fuentes\Desktop\PORTAFOLIO FINAL\TotemSigloXXI\TotemSigloXXI\bin\Debug\TotemSigloXXI.exe.manifest
+C:\Users\Felipe Fuentes\Desktop\PORTAFOLIO FINAL\TotemSigloXXI\TotemSigloXXI\bin\Debug\TotemSigloXXI.application
+C:\Users\Felipe Fuentes\Desktop\PORTAFOLIO FINAL\TotemSigloXXI\TotemSigloXXI\obj\Debug\TotemSigloXXI.exe.manifest
+C:\Users\Felipe Fuentes\Desktop\PORTAFOLIO FINAL\TotemSigloXXI\TotemSigloXXI\obj\Debug\TotemSigloXXI.application
